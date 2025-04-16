@@ -6,7 +6,7 @@
             "id": "022ca525-28f3-4698-b563-51cc6e824cfc",
             "actions": [
                 {
-                    "name": "ActivateRay",
+                    "name": "RayAbductionTrigger",
                     "type": "Button",
                     "id": "3c0173e1-5ef7-4006-a25d-44f44bbebc14",
                     "expectedControlType": "",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire",
+                    "name": "FireTrigger",
                     "type": "Button",
                     "id": "38843512-81bc-4d2a-9445-bc1463f25d7d",
                     "expectedControlType": "",
@@ -86,7 +86,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActivateRay",
+                    "action": "RayAbductionTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -97,7 +97,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActivateRay",
+                    "action": "RayAbductionTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96cfb18c-72ce-4690-a333-703efe53b943",
+                    "path": "<XRController>{LeftHand}/{PrimaryTrigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RayAbductionTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -108,7 +119,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire",
+                    "action": "FireTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -119,7 +130,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire",
+                    "action": "FireTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -130,7 +141,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire",
+                    "action": "FireTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44a0e608-7822-4001-8819-274e639fc9ef",
+                    "path": "<XRController>{RightHand}/{PrimaryTrigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
