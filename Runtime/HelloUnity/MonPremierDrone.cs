@@ -1,18 +1,24 @@
 using UnityEngine;
 
-public class MonPremierDrone : MonoBehaviour
+namespace Eloi.OVNI
+{
+    public class MonPremierDrone : MonoBehaviour
 {
     public Transform m_queBouger;
 
+        [Header("Speed")]
     public float m_vitesseToutDirection = 1;
-    [Range(-1, 1)]
+    public float m_vitesseDeRotation = 180f;
+
+        [Header("Input")]
+
+        [Range(-1, 1)]
     public float m_pourcentVersAvant = 0;
     [Range(-1, 1)]
     public float m_pourcentVersDroit = 0;
     [Range(-1, 1)]
     public float m_pourcentVersHaut = 0;
 
-    public float m_vitesseDeRotation = 180f;
     [Range(-1, 1)]
     public float m_pourcentRotation = 0;
 
@@ -55,4 +61,6 @@ public class MonPremierDrone : MonoBehaviour
 
         
     }
+}
+
 }

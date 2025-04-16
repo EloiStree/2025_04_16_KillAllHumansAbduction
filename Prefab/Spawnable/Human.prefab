@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 413849133052473684}
+  - component: {fileID: 4000078759255693145}
   - component: {fileID: 2610679383808787789}
   - component: {fileID: 4133943367919831417}
   - component: {fileID: 6719434215150190233}
@@ -16,7 +17,7 @@ GameObject:
   - component: {fileID: 8538231931832521371}
   - component: {fileID: 2113909826694030245}
   m_Layer: 0
-  m_Name: Humain
+  m_Name: Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,6 +38,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4000078759255693145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839038962565137902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d7e8e598c24de4ea8f3b89f36d4f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &2610679383808787789
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120,15 +133,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7839038962565137902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fe1c9ee7e2d052409105cda708081a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fb0cdbfdeebacd4d9b0e950cd9610f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_allowsCollision:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_onTouchAction:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8538231931832521371}
-        m_TargetAssemblyTypeName: PleaseDieMono, Assembly-CSharp
-        m_MethodName: KillMe
+        m_TargetAssemblyTypeName: Eloi.OVNI.OVNIMono_KillTheHuman, be.elab.killallhumans
+        m_MethodName: KillTheHuman
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -138,18 +154,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2113909826694030245}
-        m_TargetAssemblyTypeName: CreateAndDestroyMono, Assembly-CSharp
-        m_MethodName: CreatePrefab
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_useAieDebug: 1
 --- !u!114 &8538231931832521371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +167,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c72c1e0151f590d4883eca8f188ad41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_onSpawnAction:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onKillAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2113909826694030245}
+        m_TargetAssemblyTypeName: Eloi.OVNI.OVNIMono_CreateInstanceThenDestroy, be.elab.killallhumans
+        m_MethodName: CreatePrefab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_disableOnKill: 1
 --- !u!114 &2113909826694030245
 MonoBehaviour:
   m_ObjectHideFlags: 0
