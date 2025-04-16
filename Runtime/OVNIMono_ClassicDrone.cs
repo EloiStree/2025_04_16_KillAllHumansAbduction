@@ -6,7 +6,11 @@ namespace Eloi.OVNI
     {
         public Transform m_whatToMove;
 
+        [Header("Speed")]
         public float m_allDirectionSpeed = 0.5f;
+        public float m_speedRotation = 180f;
+
+        [Header("Percent Input")]
         [Range(-1, 1)]
         public float m_pourcentToMoveFront = 0;
         [Range(-1, 1)]
@@ -14,7 +18,6 @@ namespace Eloi.OVNI
         [Range(-1, 1)]
         public float m_pourcentToMoveUp = 0;
 
-        public float m_speedRotation = 180f;
         [Range(-1, 1)]
         public float m_pourcentToRotationRotation = 0;
 
