@@ -82,7 +82,7 @@
                 {
                     "name": "",
                     "id": "0f04a555-614c-42b6-9b41-9c6f29fabedf",
-                    "path": "<Keyboard>/shift",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -105,6 +105,17 @@
                     "name": "",
                     "id": "96cfb18c-72ce-4690-a333-703efe53b943",
                     "path": "<XRController>{LeftHand}/{PrimaryTrigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RayAbductionTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c35b2c0d-e796-442d-8b6c-531871ac4ed1",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

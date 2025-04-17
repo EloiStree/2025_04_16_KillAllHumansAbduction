@@ -185,6 +185,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_joystickValue: {x: 0, y: 0}
+  m_onValueChangedX:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onValueChangedY:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4250705343126889745
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,8 +240,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+        m_TargetAssemblyTypeName: Eloi.Relay.AbstractGenericRelayMono`1[[System.Boolean,
+          mscorlib
+        m_MethodName: PushIn
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -299,7 +306,20 @@ MonoBehaviour:
   m_inputAction: {fileID: 8367029706713263412, guid: ff6b6ce5c4324224cb86604011d6ba19, type: 3}
   m_onChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Eloi.Relay.AbstractGenericRelayMono`1[[System.Boolean,
+          mscorlib
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onDown:
     m_PersistentCalls:
       m_Calls: []
@@ -453,6 +473,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_joystickValue: {x: 0, y: 0}
+  m_onValueChangedX:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onValueChangedY:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7294969630676283539
 GameObject:
   m_ObjectHideFlags: 0

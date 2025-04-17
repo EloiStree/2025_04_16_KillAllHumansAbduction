@@ -6,6 +6,7 @@ public class OVNIMono_LerpFollowTarget : MonoBehaviour
 
     public Transform m_whatToFollow;
     public Transform m_WhatToMove;
+        public bool m_lookForPlayerIfNull = true;
 
         public float m_lerpRotatePercent = 2;
 
@@ -17,7 +18,12 @@ public class OVNIMono_LerpFollowTarget : MonoBehaviour
         }
         public void Update()
     {
-        if (m_whatToFollow != null && m_WhatToMove != null)
+            if (m_lookForPlayerIfNull && m_whatToFollow == null)
+            {
+                m_whatToFollow = GameObject.FindGameObjectWithTag("Player")?.transform;
+          
+            }
+            if (m_whatToFollow != null && m_WhatToMove != null)
         {
             Vector3 targetPosition = m_whatToFollow.position;
             Vector3 currentPosition = m_WhatToMove.position;
